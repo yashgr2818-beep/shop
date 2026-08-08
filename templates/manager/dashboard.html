@@ -33,7 +33,8 @@
             Download QR Code
         </a>
         <div class="mt-4 text-xs text-slate-500 break-all">
-            {% set base_net_url = "http://" + (local_ip|default("127.0.0.1")) + ":5000" %}
+            <!-- {% set base_net_url = "http://" + (local_ip|default("127.0.0.1")) + ":5000" %} -->
+            {% set base_net_url = "https://shop-wiru.onrender.com" %}
             Shop URL: <a href="{{ base_net_url }}/shop/{{ manager.shop_slug }}" target="_blank" class="text-blue-600 hover:underline font-semibold">{{ base_net_url }}/shop/{{ manager.shop_slug }}</a>
         </div>
     </div>
